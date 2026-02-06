@@ -9,7 +9,7 @@ const projects = [
     short: "Over the course of a semester I worked in a class 100 clean room for the course EE143 fabrictaing devices on a 6\" Si-Wafer.",
     description:
       "Design and construction of a low-cost micro-step laser lithography system for rapid prototyping of micro-scale patterns. This project combines optics, motion control, firmware, and precision CAD design.",
-    tags: ["Microfabrication", "EE143", "Clean Room"],
+    tags: ["Microfabrication", "Clean Room", "EE143"],
     
     thumbnail: "/images/si-wafer-thumb.png",
 
@@ -33,7 +33,7 @@ const projects = [
     short: "Lorem",
     description:
       "Lorem",
-    tags: ["Ipsum"],
+    tags: ["MEMS", "EE147"],
 
     thumbnail: "/images/RFC-thumb.png",
   },
@@ -44,14 +44,16 @@ const projects = [
     description:
       "Lorem",
     tags: ["Ipsum"],
+
+    thumbnail: "/images/lig-thumb.png",
   },
   {
     id: 5,
     title: "Magnet Array Simulator",
     short: "Lorem",
     description:
-      "Lorem",
-    tags: ["Ipsum"],
+      "Using ",
+    tags: ["Simulation", "Python", "Matplotlib"],
 
     thumbnail: "/images/mag-sim-thumb.png",
   },
@@ -61,7 +63,39 @@ const projects = [
     short: "Lorem",
     description:
       "Lorem",
-    tags: ["Ipsum"],
+    tags: ["2D Material"],
+
+     thumbnail: "/images/exfo-thumb.png",
+  },
+  {
+    id: 7,
+    title: "MoS2 Transistor",
+    short: "Lorem",
+    description:
+      "Lorem",
+    tags: ["Transistor", "Simulation", "EE230C"],
+
+    thumbnail: "/images/mos2-thumb.png",
+  },
+  {
+    id: 8,
+    title: "TCAD",
+    short: "Lorem",
+    description:
+      "Lorem",
+    tags: ["Transistor", "Simulation", "EE130"],
+
+    thumbnail: "/images/tcad-thumb.png",
+  },
+  {
+    id: 9,
+    title: "Hydrodynamic Launcher",
+    short: "Lorem",
+    description:
+      "Lorem",
+    tags: ["CFD", "Simulation", "Underwater Robotics"],
+
+    thumbnail: "/images/lil-lad-thumb.png",
   },
 
 ];
