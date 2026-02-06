@@ -9,7 +9,13 @@ const projects = [
     short: "Over the course of a semester I worked in a class 100 clean room for the course EE143 fabrictaing devices on a 6\" Si-Wafer.",
     description:
       "Design and construction of a low-cost micro-step laser lithography system for rapid prototyping of micro-scale patterns. This project combines optics, motion control, firmware, and precision CAD design.",
-    tags: ["Microfabrication", "Devices", "Clean Room"],
+    tags: ["Microfabrication", "EE143", "Clean Room"],
+    
+    thumbnail: "/images/si-wafer-thumb.png",
+
+    images: [],
+
+    cadModel: null, // or "/models/wafer.glb"
   },
   {
     id: 2,
@@ -18,6 +24,8 @@ const projects = [
     description:
       "A Three.js / React visualization inspired by graphene lattice motion. The wave reacts to scroll position and serves as a persistent visual anchor on the site.",
     tags: ["CAD", "Robotics", "Coding"],
+
+    thumbnail: "/images/biped-thumb.png",
   },
   {
     id: 3,
@@ -26,6 +34,8 @@ const projects = [
     description:
       "Lorem",
     tags: ["Ipsum"],
+
+    thumbnail: "/images/RFC-thumb.png",
   },
   {
     id: 4,
@@ -42,6 +52,8 @@ const projects = [
     description:
       "Lorem",
     tags: ["Ipsum"],
+
+    thumbnail: "/images/mag-sim-thumb.png",
   },
   {
     id: 6,
@@ -54,12 +66,20 @@ const projects = [
 
 ];
 
+
 export default function Projects() {
   const [activeProject, setActiveProject] = useState(null);
 
   return (
     <main className="min-h-screen bg-gray-900 text-white px-8 md:px-20 py-20">
-      <h1 className="text-5xl font-bold mb-12">Projects</h1>
+      <header className="relative z-20 w-full flex justify-between items-center py-10">
+        <h1 className="text-5xl font-bold mb-12">Projects</h1>
+        <div className="flex gap-4">
+          <a href="/" className="btn secondary">About</a>
+          <a href="/research" className="btn secondary">Research</a>
+          <a href="/contact" className="btn secondary">Contact</a>
+        </div>
+      </header>
 
       {/* Project cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
@@ -67,22 +87,42 @@ export default function Projects() {
           <button
             key={project.id}
             onClick={() => setActiveProject(project)}
-            className="group text-left bg-gray-800 rounded-2xl p-6 shadow-lg hover:bg-gray-700 transition"
+            className="group flex gap-4 text-left bg-gray-800 rounded-2xl p-4 shadow-lg hover:bg-gray-700 transition"
           >
-            <h2 className="text-2xl font-bold mb-2 group-hover:text-blue-400 transition">
-              {project.title}
-            </h2>
-            <p className="text-gray-300 mb-4">{project.short}</p>
+            {/* Thumbnail */}
+            <div className="w-32 h-24 flex-shrink-0 rounded-lg overflow-hidden bg-gray-700">
+              {project.thumbnail ? (
+                <img
+                  src={project.thumbnail}
+                  alt={project.title}
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                <div className="w-full h-full flex items-center justify-center text-gray-400 text-sm">
+                  No Image
+                </div>
+              )}
+            </div>
 
-            <div className="flex flex-wrap gap-2">
-              {project.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="text-sm bg-gray-700 px-3 py-1 rounded-full"
-                >
-                  {tag}
-                </span>
-              ))}
+            {/* Text */}
+            <div className="flex flex-col justify-between">
+              <div>
+                <h2 className="text-xl font-bold mb-1 group-hover:text-blue-400 transition">
+                  {project.title}
+                </h2>
+                <p className="text-gray-300 text-sm mb-2">{project.short}</p>
+              </div>
+
+              <div className="flex flex-wrap gap-2">
+                {project.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="text-xs bg-gray-700 px-2 py-1 rounded-full"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
             </div>
           </button>
         ))}
