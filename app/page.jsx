@@ -24,8 +24,6 @@ export default function Home() {
       {/* Header with name and buttons */}
       <header className="relative z-20 w-full flex justify-between items-center px-8 md:px-20 py-10">
         <h1 className="text-5xl font-bold">Cole Dunn</h1>
-        /* <h2 className="text-2xl font-bold"> Student Researcher Maker Engineer</h2> /*
-
         <div className="flex gap-4">
           <a href="/projects" className="btn secondary">Projects</a>
           <a href="/research" className="btn secondary">Research</a>
