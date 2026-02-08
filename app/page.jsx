@@ -39,6 +39,10 @@ export default function Home() {
         {/* Projects Section */}
         <div className="py-20 px-8 md:px-20 bg-gray-900">
           <h2 className="text-4xl font-bold mb-6 text-left">Updates</h2>
+          <h3 className="text-2xl font-bold mb-4 text-left">2/7/26</h3>
+          <p className="mb-4 max-w-4xl">
+            I am very excited to have been accepted into the Jacobs intsitute for Desing Innovation's spring 2026 catalyst grant cohort for my project: Exploration of Low Cost Nanofabrication. I look forward to utilizing the great resourses and facilities to turn this dream into a reality. 
+          </p>
           <h3 className="text-2xl font-bold mb-4 text-left">12/22/25</h3>
           <p className="mb-4 max-w-4xl">
             Currently working on applying for a SPARK grant to build a lowcost micro step laser lithography device. Professor Wakas Khalid's recent support and guidence has been very helpful and I am looking forward to working with his lab.
