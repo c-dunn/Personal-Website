@@ -20,10 +20,10 @@ const projects = [
   {
     id: 2,
     title: "Bipedal Walking Robot",
-    short: "Inspired by bird biomechnaics ",
+    short: "Inspired by bird biomechnaics I am working on a robot made of PETG capable of walking using inverse kinematics to control 10 servo motors via I2C ",
     description:
-      "A Three.js / React visualization inspired by graphene lattice motion. The wave reacts to scroll position and serves as a persistent visual anchor on the site.",
-    tags: ["CAD", "Robotics", "Coding"],
+      "",
+    tags: ["CAD", "Robotics", "In Progress"],
 
     thumbnail: "/images/biped-thumb.png",
   },
@@ -40,10 +40,10 @@ const projects = [
   {
     id: 4,
     title: "Laser Induced Graphene",
-    short: "Lorem",
+    short: "Designing and fabricating LIG coils for light weight motors and 3D network by staking successive layers of patterned kapton tape then inducing graphene connects based off Prof Tour’s research at Rice University",
     description:
       "Lorem",
-    tags: ["Ipsum"],
+    tags: ["Fabrictaion", "Lasers", "In Progress"],
 
     thumbnail: "/images/lig-thumb.png",
   },
@@ -80,7 +80,7 @@ const projects = [
   {
     id: 8,
     title: "TCAD",
-    short: "Lorem",
+    short: "Designed and analysed N-Type MOSFET transistor to operate under various loads and conditions",
     description:
       "Lorem",
     tags: ["Transistor", "Simulation", "EE130"],
@@ -97,6 +97,46 @@ const projects = [
 
     thumbnail: "/images/lil-lad-thumb.png",
   },
+  {
+    id: 10,
+    title: "Logisim CPU",
+    short: "Pipelined RISC-V CPU with 8 registers, ALU, Branch comparator and control hazard handling in Logisim",
+    description:
+      "Lorem",
+    tags: ["Programming", "Simulation", "CPU"],
+
+    thumbnail: "/images/CS61c.png",
+  },
+  {
+    id: 11,
+    title: "RISC_V Digit Classifier",
+    short: "Classification program in RISC-V assembly to run a pre-trained neural net classifier",
+    description:
+      "Classification program in RISC-V assembly to run a pre-trained neural net classifier",
+    tags: ["Programming", "Nerual Net", "RISC-V"],
+
+    thumbnail: "/images/CS61c.png",
+  },
+  {
+    id: 12,
+    title: "Parallel Convolver",
+    short: "Convolution calculation program and task manager in C using SIMD and OpenMP to enhance performance (Top 10% most efficient in class)",
+    description:
+      "",
+    tags: ["Programming", "Simulation", "Efficincy"],
+
+    thumbnail: "/images/CS61c",
+  },
+  {
+    id: 13,
+    title: "Tetrahedral Tensegrity Structure",
+    short: "In spired by Buckminster-Fuller's work I have desinged a strcuture held together under its own tension. This specific desing was made to absorb shock from drop impact.",
+    description:
+      "lorem",
+    tags: ["3D printing", "Design", "Meta-Structure"],
+
+    thumbnail: "/images/tnsgrty-thumb.png",
+  }
 
 ];
 
