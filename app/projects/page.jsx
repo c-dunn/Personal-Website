@@ -40,7 +40,7 @@ const projects = [
   {
     id: 4,
     title: "Laser Induced Graphene",
-    short: "Designing and fabricating LIG coils for light weight motors and 3D network by staking successive layers of patterned kapton tape then inducing graphene connects based off Prof Tour’s research at Rice University",
+    short: "Designing and fabricating LIG patterned kapton tape then inducing graphene connects based off Prof Tour’s research at Rice University",
     description:
       "Lorem",
     tags: ["Fabrictaion", "Lasers", "In Progress"],
@@ -50,7 +50,7 @@ const projects = [
   {
     id: 5,
     title: "Magnet Array Simulator",
-    short: "Lorem",
+    short: "A quick feild line simulator I wrote for fun to help with building and visulaizing halbach arrays",
     description:
       "Using ",
     tags: ["Simulation", "Python", "Matplotlib"],
@@ -60,7 +60,7 @@ const projects = [
   {
     id: 6,
     title: "Mechanical Exfoliator",
-    short: "Lorem",
+    short: "Using a compliant design this could be used to exfoliate 2d materials in ultrahigh vacuum where normal tapes and procedures fail.",
     description:
       "Lorem",
     tags: ["2D Material"],
@@ -70,7 +70,7 @@ const projects = [
   {
     id: 7,
     title: "MoS2 Transistor",
-    short: "Lorem",
+    short: "Final Project for Graduater Solid State electronics",
     description:
       "Lorem",
     tags: ["Transistor", "Simulation", "EE230C"],
@@ -90,7 +90,7 @@ const projects = [
   {
     id: 9,
     title: "Hydrodynamic Launcher",
-    short: "Lorem",
+    short: "Developed for Berkeley Underwater Robotics",
     description:
       "Lorem",
     tags: ["CFD", "Simulation", "Underwater Robotics"],
@@ -125,7 +125,7 @@ const projects = [
       "",
     tags: ["Programming", "Simulation", "Efficincy"],
 
-    thumbnail: "/images/CS61c",
+    thumbnail: "/images/CS61c.png",
   },
   {
     id: 13,
